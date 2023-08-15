@@ -1,0 +1,21 @@
+<main class="mx-auto max-w-[1120px] mt-20 mb-40" *ngIf="loading">
+  <section>
+    <p class="overline-prm text-center"><span class="text-[#8E59FF] font-bold">HOW IT WORK</span></p>
+    <h1 class="text-center max-w-[916px] mx-auto">We are small design team
+      with a big passion</h1>
+    <div class="mx-auto mt-24 relative">
+      <img src="assets/Illustration_img-1.svg" alt="Illustration" class="illustration-1">
+      <img src="assets/Illustration_img-2.svg" alt="Illustration" class="illustration-2">
+      <img src="assets/Illustration_img-3.svg" alt="Illustration" class="illustration-3">
+      <img src="assets/Illustration10.svg" alt="Illustration" class="rounded-3xl">
+    </div>
+  </section>
+</main>
+<ng-container *ngIf="!loading">
+  <div class="text-center my-56">
+    <img src="assets/Logo2.svg" alt="logo" class="mx-auto w-[56px] mb-4">
+    <span class="font-bold">Loading...</span>
+  </div>
+</ng-container>
+
+

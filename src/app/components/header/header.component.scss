@@ -1,0 +1,53 @@
+.testButton {
+  color: blue;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(156, 159, 172, 0.30);
+  z-index: 1;
+}
+.prm-button {
+  color: #FFF;
+
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+
+  padding: 14px 25px;
+  border-radius: 8px;
+  background: #2A85FF;
+}
+
+.active-button {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -1px;
+  position: relative;
+}
+.active-button:after {
+  content: "";
+  display: flex;
+  position: absolute;
+  bottom: -29px;
+  width: 100%;
+  border: 1px solid #2A85FF;
+}
+
+.modal::-webkit-scrollbar {
+  width: 0;
+
+}
+input::placeholder {
+  color: #E2E2EA;
+}

@@ -1,0 +1,56 @@
+<section class="section-container">
+  <div class="lg:max-w-[1120px] mx-auto mt-32 mb-24">
+    <div class="mb-20">
+      <p class="overline-prm uppercase mb-2">News & Article</p>
+      <h1>{{ title }}</h1>
+    </div>
+
+    <div class="flex flex-wrap justify-between" >
+      <ng-container *ngIf="product" class="flex flex-wrap justify-between ">
+        <app-articles
+          *ngFor="let item of product.slice(0, 1); let isFirst = first; let i = index"
+          [data]="item"
+          [dataStyles]="isFirst ? 'big-img' : getItemStyles(i)"
+          [isFirstItem2]="isFirst"
+          class="max-w-[1160px]"
+        >
+        </app-articles>
+        <div>
+          <app-articles
+            *ngFor="let item of product.slice(0, 4); let isFirst = first; let i = index"
+            [data]="item"
+            [dataStyles]="isFirst ? 'big-img2' : getItemStyles(i)"
+            [isFirstItem2]="isFirst"
+            class="max-w-[1160px]"
+          >
+          </app-articles>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</section>
+<div class="section-shape"></div>
+<section class="section-container">
+  <div class="lg:max-w-[1120px] mx-auto mt-32 mb-48">
+    <div class="mb-20">
+      <p class="overline-prm uppercase mb-2">Velit officia consequat duis enim velit mollit</p>
+      <h1>New Post</h1>
+    </div>
+
+    <div class="flex flex-wrap justify-between" >
+      <ng-container *ngIf="product" class="flex flex-wrap justify-between ">
+        <app-articles
+          *ngFor="let item of product.slice(4, product.length); let isFirst = first; let i = index"
+          [data]="item"
+          [dataStyles]="isFirst ? '' : ''"
+          [isFirstItem2]="isFirst"
+          class="max-w-[1160px]"
+        >
+        </app-articles>
+      </ng-container>
+    </div>
+    <app-button-settings [buttonText]="dataText" [buttonStyles]="dataStyle" (click)="handleClick()"></app-button-settings>
+  </div>
+</section>
+

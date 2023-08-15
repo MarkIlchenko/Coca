@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+h1 {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: -3.2px;
+}
+
+h2 {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px;
+  letter-spacing: -2.88px;
+}
+
+h4 {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+}
+
+h5 {
+  color: #1D1E25;
+  /* H5 */
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 116.667% */
+  letter-spacing: -0.72px;
+}
+
+h6 {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.6px;
+}
+
+.small-button {
+  color: #808D9E;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.big-title {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+.overline-sec {
+  color: #FFD88D;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.overline-prm {
+  color: #2A85FF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle-input {
+  border-bottom: 1px solid #E2E2EA;
+  padding: 5px 0 9px;
+}
+
+.button-section {
+  border-bottom: 2px solid #E9ECF2;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    width: fit-content;
+    color: #1D1E25;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.72px;
+  }
+  body {
+    padding: 0 12px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

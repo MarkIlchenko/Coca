@@ -1,0 +1,34 @@
+<footer class="bg-[#F9FAFF] pt-24 pb-16">
+  <div class="max-w-[1120px] mx-auto sm:max-w-none sm:w-full md:px-6">
+
+    <div class="flex justify-between align-middle mb-7">
+      <img src="assets/Logo2.svg" alt="logo">
+      <div class="flex relative">
+        <app-button-settings [buttonText]="dataText1" [buttonStyles]="dataStyle1"></app-button-settings>
+        <app-button-settings [buttonText]="dataText2" [buttonStyles]="dataStyle2"></app-button-settings>
+<!--        <app-button [dataStyles]="secButton" [dataText]="prmButtonTex2t"></app-button>-->
+<!--        <app-button [dataStyles]="prmButton" [dataText]="prmButtonText"></app-button>-->
+      </div>
+    </div>
+    <div class="w-full bg-[#E9ECF2] h-[1px] mb-10"></div>
+    <div class="flex justify-between">
+      <ul *ngFor="let data of footerLink">
+        <p class="big-title"><span class="text-[#2A85FF] mb-6">{{data.name}}</span></p>
+        <li *ngFor="let listItem of data.listName" class="mt-2">{{listItem.listTitle}}</li>
+      </ul>
+    </div>
+    <div class="flex justify-between mt-16">
+      <div class="flex">
+        <p class="text-[#808D9E]">Terms & Conditions</p>
+        <p class="text-[#808D9E] ml-6">Privacy Policy</p>
+      </div>
+      <div class="flex align-middle">
+        <ul *ngFor="let icons of socialIcons; let x = index" [class.ml-0]="x === 0" [class.ml-5]="x !== 0">
+          <li><img [src]="icons.img" alt="icon"></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

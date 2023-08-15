@@ -1,0 +1,32 @@
+<!--<p class="big-title mt-5">{{data?.title}}</p>-->
+<!--<article class="cart-container max-w-[260px]" [ngClass]="{'big-img': isFirstItem, 'big-container': isFirstItem, 'block': isTreeItem}">-->
+<!--  <img [src]="data?.img" alt="img" class="cart-img mb-4 " >-->
+<!--  <p class="mb-2 cart-date">{{data?.date}}</p>-->
+<!--  <p class="big-title mb-4" [ngClass]="{'big-container-2' : isFirstItem}">{{data?.title}}</p>-->
+<!--  <p class="mb-12 max-w-[246px] text-[#808D9E]" [ngClass]="{'big-container-2' : isFirstItem}">{{data?.description1}}</p>-->
+<!--</article>-->
+<!--<div class="flex "></div>-->
+
+<article  [routerLink]="['features/', data?.id]"  class="cart-container max-w-[260px] cursor-pointer" *ngIf="!isFirstItem; else threeEllement" [ngClass]="{'blocki': isTreeItem, 'flex justify-between test': isFirstItem4}">
+  <img [src]="data?.img" alt="img" class="cart-img mb-4 rounded-lg"  [ngClass]="{'mr-12': isFirstItem4}">
+  <div >
+    <p class="mb-2 cart-date">{{data?.date}}</p>
+    <p class="big-title mb-4" [ngClass]="{'block': isTreeItem, 'w-[565px]': isFirstItem4}">{{data?.title}}</p>
+    <p class="mb-12 max-w-[246px] text-[#808D9E]" [ngClass]="{'unvisible': isTreeItem, 'unvisible2': isFirstItem4} ">{{data?.description1}}</p>
+  </div>
+<!--  <a class="py-2 px-4 rounded-xl bg-blue-200 font-bold h-fit" [routerLink]="['features/', data?.id]" >Article Link</a>-->
+
+</article>
+<!--[routerLink]="['features/', data.id]"-->
+<div [ngClass]="{'shapeNew mb-10 mt-6': isFirstItem4}"></div>
+<ng-template #threeEllement >
+  <article [routerLink]="['features/', data?.id]" class="cart-container max-w-[260px] cursor-pointer" [ngClass]="{'big-img': isFirstItem, 'big-container': isFirstItem, 'unvisible': isFirstItem3}"  >
+    <img [src]="data?.img" alt="img" class="cart-img mb-4 rounded-lg" [ngClass]="{'mr-12': isFirstItem4}">
+    <p class="mb-2 cart-date">{{data?.date}}</p>
+    <p class="big-title mb-4" [ngClass]="{'big-container-2' : isFirstItem, 'block': isTreeItem}">{{data?.title}}</p>
+    <p class="mb-12 max-w-[246px] text-[#808D9E]" [ngClass]="{'big-container-2' : isFirstItem}">{{data?.description1}}</p>
+<!--    <a class="py-2 px-4 rounded-xl bg-blue-200 font-bold h-fit" [routerLink]="['features/', data?.id]" >Article Link</a>-->
+  </article>
+</ng-template>
+
+

@@ -1,0 +1,10 @@
+.modal-container-new {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: #FFF;
+}
+
+/*# sourceMappingURL=modal.component.css.map */

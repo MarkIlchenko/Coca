@@ -1,0 +1,45 @@
+.sec-button {
+  color: #2A85FF;
+
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -1px;
+  padding: 14px 25px;
+  border-radius: 8px;
+  background: #F2F4FC;
+}
+.prm-button {
+  color: #FFF;
+
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+
+  padding: 14px 25px;
+  border-radius: 8px;
+  background: #2A85FF;
+}
+.thr-button {
+  color: #808D9E;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+
+  padding: 14px 25px;
+  border-radius: 8px;
+  background: unset;
+}
+.center-button {
+  margin: auto;
+  display: flex;
+}
+.disable {
+  color: #a8ceff;
+}

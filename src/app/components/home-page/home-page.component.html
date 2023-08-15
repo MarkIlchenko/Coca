@@ -1,0 +1,115 @@
+<!--<app-card *ngFor="let item of product" [data]="item"></app-card>-->
+
+<main class="mx-auto max-w-[1120px]  md:max-w-none md:w-full mx-auto md:px-6 mt-20" *ngIf="loading">
+  <section class="sm:w-full">
+
+    <app-button  [dataStyles]="triggerButtonStyles" [dataText]="dataText"></app-button>
+    <h2 class="lg:w-[805px] md:w-full sm:w-full mx-auto mt-8 text-center">Meaningful product with an aesthetic touch.</h2>
+    <p class="text-center lg:w-[723px] mx-auto my-6 md:w-full sm:w-full sm:px-4">We help people to grow their business using coca landing page ui kit with professional and powerfull digital solution. Collaborate with our dedicated designers.</p>
+    <img src="assets/MainIllustration.svg" alt="Illustration" class="illustration mx-auto my-12 w-[880px]">
+  </section>
+  <section class="bg-[#1D1E25] lg:w-[880px] md:w-full sm:flex-wrap sm:w-full mx-auto pt-16 pl-16 pr-16 pb-10 sm:pt-8 sm:pb-8 sm:pl-8 sm:pb-4 rounded-2xl relative">
+    <div class="flex w-full flex-wrap justify-between md:flex-wrap align-middle">
+      <div class="sm:w-full">
+        <p class="overline-sec">PRODUCT OVERVIEW</p>
+        <h4 class="w-[336px] text-white mt-5">Build
+          Exclusively</h4>
+      </div>
+      <p class="text-[#E6E9ED] max-w-[390px] max-[500px]:mt-6 sm:max-w-none sm:w-full">Donec bibendum, dui id ultrices molestie, neque neque porta felis, id viverra ligula justo interdum mi. Nunc malesuada, risus consec maximus consequat, purus enim ultricies nisi, quis ornare.</p>
+    </div>
+    <img src="assets/illustration1.svg" alt="Illustration" class="illustration mt-20">
+    <img src="assets/illustration2.svg" alt="Illustration" class="illustrationAbsolute">
+  </section>
+  <section class="max-w-[1000px] md:w-full md:flex-wrap mx-auto md:my-16 mt-52 mx-auto flex justify-between align-top">
+    <div class="order-1 md:order-2">
+      <p class="overline-prm">AMAZINNG WOKRS</p>
+      <h4 class="w-[347px] mt-5">Leadership and
+        Teamwork</h4>
+      <p class="max-w-[380px] mt-6 mb-11">Donec bibendum, dui id ultrices molestie, neque neque porta felis, id viverra ligula justo interdum mi. Nunc malesuada, risus eu maximus consequat, purus enim ultricies nisi, quis ornare elit ante et turpis. </p>
+      <app-button  [dataStyles]="prmButton" [dataText]="dataTextNew"></app-button>
+    </div>
+    <div class="flex align-top order-2 md:order-1 md:mb-12">
+      <img src="assets/Illustration3.svg" alt="Illustration" class="w-[250px] md:w-1/2">
+      <img src="assets/Illustration4.svg" alt="Illustration" class="h-[250px] w-[250px] ml-6">
+    </div>
+  </section>
+  <div class="w-full h-[2px] bg-gray-50 my-28 md:my-4"></div>
+  <section class="lg:max-w-[1000px] md:max-w-none md:w-full mx-auto lg:flex justify-between align-top wrapper">
+    <div class="flex align-top w-full">
+      <img src="assets/Illustration5.svg" alt="Illustration">
+    </div>
+    <div>
+      <p class="overline-prm">STUNNING PRODUCT</p>
+      <h4 class="w-[440px] mt-5">Create Sensational
+        Digital Products</h4>
+      <ul class="my-12">
+        <li class="flex align-middle" *ngFor="let list of checkList; let x = index" [class.mt-0]="x === 0" [class.mt-4]="x !== 0">
+          <span class="material-symbols-outlined">check_circle</span>
+          <p class="ml-4">{{list.name}}</p>
+        </li>
+      </ul>
+      <app-button  [dataStyles]="prmButton" [dataText]="dataTextNew"></app-button>
+    </div>
+  </section>
+  <div class="w-full h-[2px] bg-gray-50 my-28 md:my-16"></div>
+  <section>
+    <p class="overline-prm text-center"><span class="text-[#83BF6E]">HOW IT WORK</span></p>
+    <h4 class="text-center mt-1 mb-12">How Coca Work</h4>
+    <div class="flex md:flex-wrap justify-between py-24 px-16 rounded-2xl bg-[#F9FAFF]">
+      <div>
+        <div *ngFor="let infoList of infoList; let x = index"  [class.mt-0]="x === 0" [class.mt-5]="x !== 0">
+          <div class="flex  align-middle">
+            <img [src]="infoList.img" alt="img">
+            <div class="ml-10">
+              <p class="big-title mb-1">{{infoList.title}}</p>
+              <p class="text-[#808D9E]">{{infoList.text}}</p>
+            </div>
+          </div>
+          <div class="w-full h-[2px] bg-[#E9ECF2] mt-5"></div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-between md:mt-8">
+        <div>
+          <h4 class="max-w-[334px] mb-6">Start custom & build!</h4>
+          <p class="max-w-[462px]">Nunc et tellus non erat accumsan aliquam eget non mi. Integer fringilla pellentesque finibus.</p>
+        </div>
+        <div class="flex md:mt-4">
+          <div class="mr-16">
+            <p class="big-title">Only $50</p>
+            <p class="text-[#808D9E]">for Silver package</p>
+          </div>
+          <app-button [dataStyles]="prmButton" [dataText]="dataTextNew2"></app-button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-24 mb-48 md:mt-16 ">
+    <p class="overline-prm">DELIVERABLE</p>
+    <h4 class="mt-1 mb-6">How Coca Work</h4>
+    <div class="flex justify-between flex-wrap">
+      <app-card *ngFor="let item of infoList2" [data]="item"></app-card>
+
+
+    </div>
+  </section>
+</main>
+
+<ng-container *ngIf="!loading">
+  <div class="text-center my-56">
+    <img src="assets/Logo2.svg" alt="logo" class="mx-auto w-[56px] mb-4">
+    <span class="font-bold">Loading...</span>
+  </div>
+</ng-container>
+
+
+<!--<div  class="m-40">-->
+<!--  <button class="px-4 py-2 rounded-xl bg-blue-600 text-white " (click)="onClick()">It's random message</button>-->
+<!--  {{message}}-->
+<!--  <div *ngIf="showMessage; else noEdit">-->
+<!--    <p>You can edit the following paragraph.</p>-->
+<!--  </div>-->
+<!--  <ng-template #noEdit>-->
+<!--    <p>The following paragraph is read only. Try clicking the button!</p>-->
+<!--  </ng-template>-->
+<!--</div>-->
+

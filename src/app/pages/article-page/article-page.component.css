@@ -1,0 +1,32 @@
+.newOverline {
+  color: #808D9E;
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.72px;
+}
+
+.p {
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; /* 190% */
+}
+
+.quote {
+  width: 100%;
+  padding: 32px 48px;
+  color: #1D1E25;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36px;
+  background: #B1E5FC;
+}
+
+/*# sourceMappingURL=article-page.component.css.map */

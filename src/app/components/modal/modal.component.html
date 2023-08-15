@@ -1,0 +1,16 @@
+<div class="modal-container-new py-10 px-20 flex flex-col justify-between relative">
+  <img src="assets/Logo2.svg" alt="Logo" class="w-[72px] h-[72px] ml-4">
+  <ul >
+    <li class="w-[436px] rounded-xl hover:bg-[#F9FAFF] p-4 mt-0" *ngFor="let data of navLink">
+      <a [routerLink]="['features/', data.id]">{{data.name}}</a>
+    </li>
+  </ul>
+  <div class="ml-4">
+    <img src="assets/Email.svg" alt="email" class="w-[64px] h-[64px]">
+    <div class="mt-6">
+      <p class="subtitle">Drop us a line</p>
+      <p class="big-title" (click)="newClose()">hellosansbrothers@gmail.com</p>
+    </div>
+  </div>
+  <img src="assets/Close.svg" alt="close" class="absolute top-4 right-4 cursor-pointer" (click)="close()">
+</div>
